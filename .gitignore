@@ -1,0 +1,279 @@
+# Personal Finance Tracker - Complete .gitignore
+
+# ============================================
+# GENERAL
+# ============================================
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ============================================
+# NODE.JS / NPM
+# ============================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# BACKEND
+# ============================================
+
+# Logs
+backend/logs/
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# Runtime data
+backend/pids/
+backend/*.pid
+backend/*.seed
+backend/*.pid.lock
+
+# Coverage directory
+backend/coverage/
+backend/.nyc_output/
+
+# Uploads directory
+backend/uploads/
+backend/public/uploads/
+
+# Temporary files
+backend/tmp/
+backend/temp/
+
+# Build files
+backend/dist/
+backend/build/
+
+# ============================================
+# FRONTEND / REACT
+# ============================================
+
+# Production build
+frontend/build/
+frontend/dist/
+
+# Testing
+frontend/coverage/
+
+# Misc
+frontend/.DS_Store
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# React specific
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ============================================
+# DATABASE
+# ============================================
+
+# MongoDB
+*.mongodb
+*.db
+
+# Database dumps
+*.sql
+*.sqlite
+*.sqlite3
+
+# ============================================
+# SECURITY & SENSITIVE FILES
+# ============================================
+
+# API Keys & Secrets
+**/secrets.json
+**/config/secrets.js
+**/.secrets
+**/credentials.json
+**/*-private-key.json
+**/*.pem
+**/*.key
+**/*.cert
+**/*.p12
+
+# JWT Keys
+**/private.key
+**/public.key
+
+# ============================================
+# CLOUDINARY & EXTERNAL SERVICES
+# ============================================
+
+# Cloudinary config
+cloudinary-config.json
+
+# ============================================
+# TESTING
+# ============================================
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Test results
+test-results/
+junit.xml
+
+# ============================================
+# BUILD TOOLS
+# ============================================
+
+# Webpack
+.cache/
+.parcel-cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+
+# Gatsby
+.cache/
+public/
+
+# ============================================
+# DOCUMENTATION
+# ============================================
+
+# Generated documentation
+docs/_build/
+docs/.doctrees/
+site/
+
+# ============================================
+# MISC
+# ============================================
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Lock files (uncomment if you want to ignore them)
+# package-lock.json
+# yarn.lock
+
+# ============================================
+# DEPLOYMENT
+# ============================================
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# Heroku
+.heroku/
+
+# PM2
+.pm2/
+
+# ============================================
+# BACKUP FILES
+# ============================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# ============================================
+# COMPRESSED FILES (Optional)
+# ============================================
+
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# CUSTOM PROJECT-SPECIFIC
+# ============================================
+
+# Receipt images (if not using Cloudinary)
+receipts/
+
+# Exported data
+exports/
+*.csv
+*.xlsx
+
+# Logs directory
+logs/
+
+# Temporary test data
+test-data/
+
+# Scripts for local development only
+local-scripts/
